@@ -11,7 +11,9 @@ basic temperature reader/writer using DHT22 Temp/Humidity Sensor and ThingSpeak.
 
 # Crontab
 
-    */10 * * * * cd ~/brigantine; python record_send.py
+    * * * * * cd ~/thingpseak_sensors; python3 record_send.py ; python3 record_send_water.py
+
+Or copy from crontab.txt using `crontab < crontab.txt`
 
 ## Thingspeak API
 
