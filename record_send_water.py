@@ -26,5 +26,5 @@ if __name__=='__main__':
     api_key = config['thinkspeak']
     is_dry = measure_the_data(channel)
     send_the_data(is_dry,api_key)
-    print is_dry
+    print(is_dry)
 
