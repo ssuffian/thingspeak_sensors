@@ -1,3 +1,2 @@
-* * * * * cd /home/pi/temp_read ; sudo python record_send.py; sudo python record_send_water.py
-* * * * * /usr/bin/screen -S reverse-ssh-tunnel -d -m autossh -M 65500 -i /home/pi/.ssh/id_rsa -o "ServerAliveInterval 20" -o "ServerAliveCountMax 3" -R 2223:localhost:22 iot@dev.stephensuffian.com
+* * * * * cd /home/pi/thingspeak_sensors ; python3 record_send.py; python3 record_send_water.py
 0 0 * * * sudo reboot
